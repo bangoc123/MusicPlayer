@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bOn-va-yYS">
+                                <rect key="frame" x="172" y="281" width="30" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="FmG-C5-Xa8"/>
+                                    <constraint firstAttribute="height" constant="25" id="awq-S7-4Es"/>
+                                </constraints>
+                                <state key="normal" image="play2.png"/>
+                                <connections>
+                                    <action selector="action_Play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rEf-81-Pg8"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="min2.png" maximumValueImage="max2.png" translatesAutoresizingMaskIntoConstraints="NO" id="TeS-kt-zBT">
+                                <rect key="frame" x="14" y="319" width="347" height="31"/>
+                                <color key="minimumTrackTintColor" red="1" green="0.23656415080265036" blue="0.27904657412987688" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.13304079664324719" green="0.81153764823790109" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.25011010093876718" blue="0.46978076667604762" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="action_silde:" destination="BYZ-38-t0r" eventType="valueChanged" id="D2h-l7-0yG"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TeS-kt-zBT" firstAttribute="top" secondItem="bOn-va-yYS" secondAttribute="bottom" constant="13" id="7Tx-5J-Guw"/>
+                            <constraint firstItem="TeS-kt-zBT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MhL-sq-WOl"/>
+                            <constraint firstItem="TeS-kt-zBT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Rtp-Cp-OEi"/>
+                            <constraint firstItem="TeS-kt-zBT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UVJ-mQ-6w1"/>
+                            <constraint firstItem="bOn-va-yYS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rjM-Ep-UmX"/>
+                            <constraint firstItem="TeS-kt-zBT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ysw-e3-5zI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btn_Play" destination="bOn-va-yYS" id="YtK-sj-fVB"/>
+                        <outlet property="sld_Volume" destination="TeS-kt-zBT" id="EHu-9Q-3lr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446.5" y="361.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="max2.png" width="30" height="30"/>
+        <image name="min2.png" width="30" height="30"/>
+        <image name="play2.png" width="100" height="100"/>
+    </resources>
+</document>
