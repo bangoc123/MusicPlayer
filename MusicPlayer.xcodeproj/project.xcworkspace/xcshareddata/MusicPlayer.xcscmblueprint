@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DB773C7CAFCA4EFCF573901917CD48252A25F904",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E2821DCD375F089B228499F83949B5C8C96A1CC3" : 0,
+    "DB773C7CAFCA4EFCF573901917CD48252A25F904" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0658B14F-1E96-4247-AEDA-9B90F2F19374",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E2821DCD375F089B228499F83949B5C8C96A1CC3" : "",
+    "DB773C7CAFCA4EFCF573901917CD48252A25F904" : "MusicPlayer\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MusicPlayer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MusicPlayer.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bangoc123\/MusicPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DB773C7CAFCA4EFCF573901917CD48252A25F904"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bangoc123\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E2821DCD375F089B228499F83949B5C8C96A1CC3"
+    }
+  ]
+}
